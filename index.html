@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+        }
+
+        .products {
+            width: 50%;
+        }
+
+        .products li {
+            border-bottom: 2px solid;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        .cart {
+            border-left: 5px solid;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <ul id="products" class="products"></ul>
+
+    <div class="cart">
+        <div>
+            Кол-во: <span id="total-count">0</span>
+        </div>
+
+        <div>
+            Цена: <span id="total-price">0</span>р
+        </div>
+
+
+        <h3>Активные товары</h3>
+        <ul id="cart-products-active"></ul>
+
+        <hr>
+
+        <h3>Неактивные товары</h3>
+        <ul id="cart-products-not-active"></ul>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
